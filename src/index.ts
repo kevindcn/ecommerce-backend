@@ -1,7 +1,6 @@
 import express from 'express'
 import cors from 'cors'
 import helmet from 'helmet'
-import dotenv from 'dotenv'
 import rateLimit from 'express-rate-limit'
 
 import authRoutes from './routes/auth'
@@ -9,8 +8,6 @@ import productRoutes from './routes/products'
 import cartRoutes from './routes/cart'
 import orderRoutes from './routes/orders'
 import paymentRoutes from './routes/payment'
-
-dotenv.config()
 
 const app  = express()
 const PORT = process.env.PORT || 5000
